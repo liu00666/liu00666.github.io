@@ -1,15 +1,11 @@
 body{
     font-family:'Courier New', Courier, monospace;
     font-size: 18px;
-    line-height: 1.5;
-    color: #333;
-    background-color: #f5f5f5;
 }
 header,footer{
     background-color: #6400bc;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    
+   
 }
 .site-title{
     color:bisque
