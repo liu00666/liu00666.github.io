@@ -1,0 +1,40 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f5f5f5;
+}
+header,footer{
+    background-color: #6400bc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.site-title{
+    color:bisque
+}
+#my-image{
+    box-shadow: 0 0 2px 1px #000000;
+}
+
+ol{
+    list-style-type: square;
+}
+
+ol li:nth-child(odd){
+background-color: rgb(45, 192, 126);
+}
+nav ul{
+    list-style-type: none;
+
+}
+nav ul li a{
+    
+    text-decoration: none;
+    background-color: indianred;
+    border: 1px solid yellow;
+}
+
+nav ul li a:hover{
+    background-color: coral;}
