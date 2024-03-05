@@ -6,101 +6,77 @@
     <title>Lone Starfish</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
+  
   <body>
-    <header class="container">
-      <img src="/images/lone-starfish-wide.jpg" alt="starfish">
-      <div class="starfish">Lone Starfish</div>
-    </header>
-
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html"> home </a>
-        </li>
-        <li>
-          <a href="#article"> story </a>
-        </li>
-        <li>
-          <a href="#form"> contact </a>
-        </li>
-      </ul>
-    </nav>
-<div>
-    <section id="article">
+      <div class="wrapper"><!--wrapper for all type-->
+      <header>
+          <img src="/images/lone-starfish-wide.jpg" alt="starfish">
+          <h1>Lone Starfish</h1>
+          <!-- CSS: overlay title in middle of image -->
+          <nav>
+              <ul>
+                  <li><a href="index.html">home</a></li>
+                  <li><a href="#story" id="midlink">story</a></li>
+                  <li><a href="#contact">contact</a></li>
+              </ul>
+          </nav>
+          <!-- navigation, link these to articles on page. CSS: text-transform uppercase -->
+      </header>
+      <main>
       <article>
-        <h2>Life of a Starfish</h2>
-        <img class="star" src="/images/lone-starfish.jpg" alt="starfish">
-        <p>
-            Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
-        </p>
+          <h2 id="story">Life of a Starfish</h2>
+          <img src="/images/lone-starfish.jpg" alt="stafish" title="starfish">
+          <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.</p>
+          <!-- css: create text wrapping around image -->
       </article>
-    </section>
-  </div>
-  <div>
-    <section id="facts">
-      <h2>Facts About Starfish</h2>
-      <ul>
-        <li>
-          Australian herring barbel Mexican golden trout, killifish bonito;
-          northern anchovy.
-        </li>
-        <li>
-          Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost
-          River sucker, mojarra.
-        </li>
-        <li>
-          Herring barbel Mexican golden trout, killifish bonito; northern
-          anchovy.
-        </li>
-        <li>
-          Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost
-          River sucker, mojarra.
-        </li>
-      </ul>
-    </section>
-</div>
-    <section id="form">
-      <h3>Contact to learn more</h3>
-      <form method="GET" action="contact">
-        <div class="input-gp">
+      </main>
+      <article>
+          <h2>Facts About Starfish</h2>
+          <ul>
+              <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+              <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+              <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+              <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+          </ul>
+          <!-- bulleted list -->
+      </article>
+      <h2 id="contact">Contact to learn more</h2>
+      <form method="post">
+          <fieldset id="namefield">
           <label for="name">Your Name</label>
-          <input type="text" name="name" id="name" value="">
-        </div>
-
-        <div class="input-gp">
+          <br>
+          <input id="name" type="text"  required>
+          </fieldset>
+  
+          <fieldset id="emailfield">
           <label for="email">Your Email</label>
-          <input type="email" name="email" id="email" value="">
-        </div>
-
-        <div class="input-gp">
-          <label for="message">Your Message</label>
-          <textarea name="message" id="message" cols="30" rows="5"></textarea>
-        </div>
-
-        <div class="input-gp">
-          <p>Would you like to visit the starfish?</p>
-          <div class="radio-gp">
-            <div class="opt">
+          <br>
+          <input id="email" type="text" required>
+          </fieldset>
+  
+          <fieldset id="messagefield">
+              <label for="message">Your Message</label>
+              <br>
+              <textarea id="message"></textarea>
+          </fieldset>
+  
+          <h3>Would you like to visit the starfish?</h3>
+          <fieldset id="radiofield">            
               <label for="yes">Yes</label>
-              <input type="radio" name="visit" id="yes" value="yes">
-            </div>
-            <div class="opt">
+              <input type="radio" id="yes" name="visit" value="yes">
+  
               <label for="no">No</label>
-              <input type="radio" name="visit" id="no" value="no">
-            </div>
-            <div class="opt">
+              <input type="radio" id="no" name="visit" value="no">
+              
               <label for="maybe">Maybe</label>
-              <input type="radio" name="visit" id="maybe" value="maybe">
-            </div>
-          </div>
-        </div>
-
-        <input type="submit" name="submit" value="SEND">
+              <input type="radio" id="maybe" name="visit" value="maybe">
+          </fieldset>
+          <button type="submit">send</button>
       </form>
-    </section>
-
-    <footer>
-      <p id="copyright">&copy; Lone Starfish.</p>
-    </footer>
+      <!-- CSS: needs box around, style button to match bg -->
+      <footer>
+          <p>&copy; Lone Starfish.</p>
+      </footer>
+      <!-- footer needs right alignment -->
+      </div>
   </body>
-</html>

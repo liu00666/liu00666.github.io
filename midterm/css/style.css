@@ -1,171 +1,148 @@
-* {
+html{
   box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+  box-sizing: inherit;
+}
+/* sets up box sizing for all elements */
+html{
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #aad4cf;
+}
+.wrapper{
+  background-color: #d4e9e7;
+  width: 1024px;
+  margin: auto;
+}
+/* base styles above*/
+
+header{
+  width: auto;
   margin: 0;
-  padding: 0;
-  font-family:  Arial, sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+header img{
+  width: 100%;
+}
+
+h1{
+  font-size: 4rem;
+  color: #FFFFFF;
+  line-height: 2em;
+  position: absolute;
+  bottom: 88px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
   font-weight: unset;
 }
-  
 
-  html {
-    background-color: #aad4cf;
-  }
-  
-  body {
-    background-color: #d4e9e7;
-    width: 1024px;
-    margin: 0 auto;
-  }
-  
+nav{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 2em;
+  width: 100%;
+}
 
-  h1 {
-    font-size: 36px;
-  }
+nav li{
+  display: inline-block;
+  width: 32%;
+}
+nav a{
+  display: inline-block;
+  border-right: 1px solid black;
+  width: 100%;
+}
+/* made the width about a third of the wrapper */
 
-  .starfish{
-    color: white;
-    position: absolute;
-    top: 180px;
-    width: 100%;
-    text-align: center;
-    font-size: 56px;
-  }
+nav ul li:nth-child(3) a{
+  border-right: none;
+}
+/* hide last border */
 
-  .star {
-    float: left;
-    margin: 0 20px 20px 0;
-    height: 240px;
-    width: 240px;
-  }
-  
- 
-  
-  article {
-    line-height: 1.4;
-    font-size: 16px;
-  }
-  
-  
-  
- 
-  
-  nav > ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-  }
-  
-  nav > ul > li {
-    
-    align-items: center;
-    padding: 5px 0;
-    flex: 1;
-    flex-direction: row;
-    display: flex;
+nav a:link,a:visited{
+  color: black;
+  text-decoration: none;
+}
 
-  }
-  
-  nav > ul > li:nth-child(2) {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-  }
-  
-  nav > ul > li > a {
-    flex: 1;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
-  }
-  
+/* link styles */
+/* all header styles above */
 
-  
-  section#facts {
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  section#facts ul {
-    margin-left: 1rem;
-    line-height: 1;
-  }
-  
-  section#info {
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  section#form > form {
-    display: flex;
-    flex-direction: column;
-    border: solid 2px black;
-    padding: 25px 15px;
-    gap: 15px;
-  }
-  
-  section#form > form .input-gp {
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  section#form > form .radio-gp {
-    display: flex;
-    flex-direction: row;
-    gap: 6px;
-  }
-  
-  section#form > form > input[type="submit"] {
-    width: fit-content;
-    border: solid 1px black;
-    padding: 10px;
-  }
-  
-  footer {
-    padding: 26px 30px 36px 0;
-    margin-bottom: 20px;
-  }
-  
-  footer p#copyright {
-    text-align: right;
-  }
-  
+h2{
+  font-size: 2rem;
+  line-height: 1.5em;
+  margin: 10px;
+  font-weight: unset;
+}
 
-  section#form > form textarea[type="message"],
-  section#form > form textarea {
-    resize: none;
-    height: 100px;
-    
-  }
-  
-  .input-gp > p {
-    font-size: 24px;
-    padding: 16px 0 26px 0;
-  }
-  
-  .opt {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-  
-  section#form input[type="submit"] {
-    background: none;
-    font-size: 10px;
-  }
-  .container {
-    position: relative;
-  }
+article img{
+  width: 250px;
+  height: 257px;
+  float: left;
+  margin: 10px;
+}
 
-  section {
-    padding: 12px 10px;
-  }
-  h2 {
-    margin-top: 10px;
-    font-size: 32px;
-  }
+p{
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin: 10px;
+}
+/* article styles */
+
+article ul{
+  list-style-type: square;
+  padding: 0.5rem;
+  line-height: 1.5rem;
+}
+article ul li{
+  margin: 0 2rem;
+}
+/* includes all article list styles */
+
+form{
+  line-height: 1rem;
+  border: solid black 2px;
+  padding: 1rem;
+  margin: 10px;
+}
+fieldset{
+  margin: 1rem 0;
+}
+form input{
+  margin: 1rem 0;
+  border: 0.25px solid #808080;
+  width: 100%;
+}
+form textarea{
+  margin: 1rem 0;
+  border: 0.5px solid #808080;
+  width: 100%;
+  height:100px;
+}
+form h3{
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  font-weight: unset;
+}
+form input[name="visit"]{
+  margin: 0.5rem;
+  width: auto;
+}
+form button{
+  text-transform: uppercase;
+  background-color: #d4e9e7;
+  padding: 0.5rem;
+}
+/* includes all form styles */
+
+footer{
+  text-align: right;
+  text-transform: capitalize;
+  padding: 1rem;
+  margin: 1rem;
+}
