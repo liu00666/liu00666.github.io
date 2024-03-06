@@ -100,7 +100,7 @@ p{
 
 
 article ul{
-  list-style-type: square;
+  list-style-type: disc;
   padding: 0.5rem;
   line-height: 1.5rem;
   
@@ -123,6 +123,7 @@ form input{
   margin: 1rem 0;
   border: 0.25px solid #808080;
   width: 100%;
+  height:30px;
 }
 form textarea{
   margin: 1rem 0;
@@ -138,6 +139,7 @@ form h3{
 form input[name="visit"]{
   margin: 0.5rem;
   width: auto;
+  
 }
 form button{
   text-transform: uppercase;
