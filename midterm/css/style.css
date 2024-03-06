@@ -16,6 +16,7 @@ html{
   background-color: #d4e9e7;
   width: 1024px;
   margin: auto;
+
 }
 
 
@@ -38,7 +39,7 @@ h1{
   bottom: 88px;
   left: 50%;
   transform: translate(-50%);
-  z-index: 1;
+
   font-weight: unset;
 }
 
