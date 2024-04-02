@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media</title>
-    <link rel="stylesheet" href="css/reset.css">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,7 +13,9 @@
             <div class="logoContainer">
             <img id="logo" src="/images/logo.png" alt="star logo">
             </div>
-            <!-- company logo -->
+          
+            <!-- navigation -->
+            <nav class="navigation">
             <ul>
                 <li>
                     <a href="#home">Home</a>
@@ -31,18 +33,20 @@
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
+        </nav>
             <form class="search">
                
                 <!-- searchbar -->
                 <input type="text" placeholder="Search">
-                <button type="submit">Search</button>
+                <button type="submit"><img src="/images/search.png" alt="search"></button>
               
             </form>
         </nav>
-        <section id="home">
+         <!-- banner -->
+        <section >
             <img src="/images/main-banner.jpg" alt="Employees at work">
             <article>
-                <h1>
+                <h1 class="title">
                     Welcome to Three Star Media
                 </h1>
                 <p>
@@ -53,9 +57,9 @@
             </article>
         </section>
     </header>
-    <div class="container">
+    <div >
         <main>
-            <section id="about">
+            <section class="about">
                 <img src="/images/about-us.jpg" alt="recreation room">
                 <article>
                     <h1>
@@ -70,19 +74,19 @@
                 </article>
             </section>
             <!-- all services are below -->
-            <section id="services">
+            <section class="services">
                 <h1>
                     Our Services
                 </h1>
                 <article id="digital">
-                    <img src="/images/digital.jpg" alt="Working on laptop">
+                    <img src="/images/digital.jpg" alt="laptop">
                     <h2>
                         Digital Transformation
                     </h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid earum perferendis quidem laboriosam quaerat rerum exercitationem debitis nemo, temporibus minus, assumenda beatae eum sequi iusto optio voluptatem velit recusandae!
                     </p>
-                    <a>Digital Plans</a>
+                    <button>Digital Plans</button>
                     
                 </article>
                 <article id="marketing">
@@ -93,7 +97,7 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid earum perferendis quidem laboriosam quaerat rerum exercitationem debitis nemo, temporibus minus, assumenda beatae eum sequi iusto optio voluptatem velit recusandae!
                     </p>
-                    <a>Marketing Plans</a>
+                    <button>Marketing Plans</button>
                     
                 </article>
                 <article id="video">
@@ -104,7 +108,7 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid earum perferendis quidem laboriosam quaerat rerum exercitationem debitis nemo, temporibus minus, assumenda beatae eum sequi iusto optio voluptatem velit recusandae!
                     </p>
-                    <a>Video Plans</a>
+                    <button>Video Plans</button>
                     
                 </article>
                 <article id="webDev">
@@ -115,7 +119,7 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid earum perferendis quidem laboriosam quaerat rerum exercitationem debitis nemo, temporibus minus, assumenda beatae eum sequi iusto optio voluptatem velit recusandae!
                     </p>
-                    <a>Web Plans</a>
+                    <button>Web Plans</button>
                     
                 </article>
                 <article id="print">
@@ -126,7 +130,7 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid earum perferendis quidem laboriosam quaerat rerum exercitationem debitis nemo, temporibus minus, assumenda beatae eum sequi iusto optio voluptatem velit recusandae!
                     </p>
-                    <a>Print Plans</a>
+                    <button>Print Plans</button>
                     
                 </article>
             </section>
@@ -139,7 +143,7 @@
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, esse ea similique id quo sequi, perspiciatis eos aliquam nihil error officia. Cum quis assumenda autem eaque debitis, porro esse nemo?
                     </p>
-                    <a>Learn More</a>
+                    <button>Learn More</button>
                     
                 </article>
             </section>
@@ -179,12 +183,10 @@
                     Contact Us
                 </h1>
                 <!-- contact form below -->
-                <form>
-               
-                    <fieldset>
-                        <h2>Send us a message</h2>
-                    </fieldset>
-                    
+                
+                <h2>Send us a message</h2>
+                  
+                <form class="contact">  
                     <label for="name">Full Name</label>
                     <input id="name" name="name" type="text">
 
@@ -196,14 +198,30 @@
 
                     <button type="submit">Send</button>
                 </form>
-                <article>
+                <div class="contact-item1">
                     <h2>Hours of operation</h2>
-                    <!-- table here -->
-                </article>
-                <article>
-                    <h2>Location</h2>
-                    <!-- maps link  -->
-                </article>
+                    <table>
+                        <tr>
+                          <th>Day</th>
+                          <th>Hours</th>
+                        </tr>
+                        <tr>
+                          <td>Monday - Friday</td>
+                          <td>9 AM - 6 PM</td>
+                        </tr>
+                        <tr>
+                          <td>Saturday - Sunday</td>
+                          <td>Closed</td>
+                        </tr>
+                      </table>
+                </div>
+              
+                  
+                    <div class="contact-item1">
+                        <h3 >Location</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11224.279519010788!2d-75.92067345!3d45.307013999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2006906d6fa7b%3A0xa112ec1550fdc00c!2sInsmill%20Park!5e0!3m2!1sen!2sca!4v1712092808245!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+               
             </section>
         </main>
     </div>
@@ -214,6 +232,7 @@
         <p>
             All images are takes from <a target="_blank" href="https://unsplash.com/">Unsplash</a>
         </p>
+      
     </footer>
 </body>
 </html>
