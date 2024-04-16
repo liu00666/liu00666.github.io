@@ -1,0 +1,139 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* colours variable */
+:root {
+    --primary-brown: #c78c06;
+    --secondary-yellow: #ffe6ac;
+    --text-color: #222;
+  }
+
+/* max width for container=1200px */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h1{
+    font-size:4rem;
+    font-weight:700;
+  }
+
+/* mobile first */
+body{
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav{
+    background-color: var(--text-color);
+    color: var(--primary-brown);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+}
+
+/* creates flex layout */
+nav ul{
+    display: flex;
+    flex-direction: column;
+}
+nav img{
+    display: block;
+    margin: 2rem 0;
+} 
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+form.search input[type=text] {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: white;
+}
+/* styles the submit button */
+form.search button {
+    float: left;
+    width: 10%;
+    padding: 1rem;
+    background: var(--text-color);
+    color: var(--primary-brown);
+    font-size: 1rem;
+    border: 1px solid var(--primary-brown);
+}
+#hero img{
+    display: none;
+}
+/* banner */
+#hero {
+    background-image: url("/images/main-banner.jpg"); 
+    background-position: center; 
+    background-size: cover; 
+    padding: 40px 0;
+}
+
+#hero div.container{
+    position: relative;
+    top: 10%;
+    color: white;
+    background-color: rgba(34, 34, 34, 0.75);
+}
+
+#hero div.container article{
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+
+#hero a{
+    display: inline-block;
+    background-color: var(--primary-brown);
+    padding: 1rem;
+    margin: 1rem 0;
+    color: black;
+    font-size: 1.3rem;
+    border: solid var(--primary-brown) 1px;
+}
+#hero a i{
+    padding: 1rem;
+}
+#about{
+    background-color: var(--secondary-yellow);
+}
+#about div.container{
+    padding: 1rem;
+}
+#about img{
+    width: 100%;
+}
+
+h2{
+    font-size:3rem;
+    font-weight:700;
+}
+
+
+
+
+/* desktop layout */
+@media (min-width: 760px) {
+    .container {
+      padding: 16px 0;
+    }
+
+    
