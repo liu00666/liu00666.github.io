@@ -14,15 +14,17 @@
 </head>
 <body>
     <header> 
-        <nav>
-            <ul class="container">
-                <li> <img  src="/images/logo.png" alt="logo"> </li>
+          <!-- logo -->
+        <div class="logo">
+            <img src="/images/logo.png" alt="logo"> 
+             <!-- navigation -->
+        <nav class="navbar">
+            <ul class="container"></ul>
                 <li><a href="#">Home</a> </li>
                 <li> <a href="#">About Us</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Team</a> </li>
                 <li> <a href="#">Contact</a> </li>
-                <li>
                       <!-- search -->
                     <form class="search">
                         <input type="text" placeholder="Search">
@@ -52,7 +54,7 @@
                 </article>
             </div>
         </section>
-        <!-- services below -->
+        <!-- our services below -->
         <section id="services">
             <div class="container">
                 <h2>Our Services</h2>
@@ -84,7 +86,7 @@
                         <a>Video Plans<i class="fa-solid fa-caret-right"></i> </a>
                     </div>
                 </article>
-                <article id="webDev">
+                <article id="web">
                     <img src="/images/web.jpg" alt="ins">
                     <div id="webText">
                         <h3>Web Development</h3>
@@ -124,7 +126,7 @@
                 </h2>
                 <article>
                     <img src="/images/john.jpg" alt="Man smiling">
-                    <div id="team01">
+                    <div id="johndoe">
                         <h3>John Doe </h3>
                              <h4> CEO and Co-owner </h4>
                     
@@ -133,7 +135,7 @@
                 </article>
                 <article>
                     <img src="/images/bob.jpg" alt="Man portrait">
-                    <div id="team02">    
+                    <div id="bobrite">    
                         <h3> Bob Rite</h3>
                                 <h4>CFO and Co-owner</h4>
                         
@@ -147,8 +149,8 @@
             <section id="contact">
                 <div class="container">
                 <h1>Contact Us </h1>
-                
-                <h2>Send us a message</h2>
+                <div class="contact01">
+                <h3>Send us a message</h3>
                 <form class="contact">  
                     <label for="name">Full Name</label>
                     <input id="name" type="text" name="name">
@@ -158,8 +160,9 @@
                     <textarea id="message" name="message" rows="10"></textarea>
                     <button type="submit">Send</button>
                 </form>
+                <section id="houroperation">
                 <div class="contact-form">
-                    <h2>Hours of operation</h2>
+                    <h3>Hours of operation</h3>
                     <table>
                         <tr>
                           <th>Day</th>
@@ -175,6 +178,7 @@
                         </tr>
                       </table>
                 </div>
+            </section>
                 <section id="location">
                         <h3 >Location</h3>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11224.279519010788!2d-75.92067345!3d45.307013999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2006906d6fa7b%3A0xa112ec1550fdc00c!2sInsmill%20Park!5e0!3m2!1sen!2sca!4v1712092808245!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -182,7 +186,7 @@
             </section>
         </section>
         </main>
-    
+    <!-- footer below -->
     <footer>
         <div class="container">
         <p> &copy; Copywrite Three Star Media, 2020 </p>
