@@ -146,7 +146,7 @@ h3 {
 
 p{
     font-size:1.2rem;
-    line-height:4rem;
+    line-height:1.6rem;
     margin-top:1rem;
 }
 
@@ -312,6 +312,7 @@ header .logo{
     
       #about .aboutus{
         width: 50%;
+        height:fit-content;
       }
       #services .container{
         display: grid;
@@ -322,6 +323,7 @@ header .logo{
         display: flex;
     }
     #team .team:nth-child(2){
+    
         flex-direction: row-reverse;
     }
     #contact .contact01 {
