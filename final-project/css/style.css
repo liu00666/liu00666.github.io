@@ -1,14 +1,4 @@
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 800
 
-.open-sans-<uniquifier> {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
 
 /* max width for container=1200px */
 .container {
@@ -152,7 +142,7 @@ h3 {
     font-size:1.8rem;
     font-weight:700;
 }
-}
+
 
 p{
     font-size:1.2rem;
